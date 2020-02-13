@@ -16,6 +16,14 @@ Timer
 - work with Date()
 
 
+WarCardGame //my first game//  - game against CPU, which side have higher card, he win and get point!!! 
+- Collection View - Cell 
+- colaborate with names of pictures
+
+
+
+
+
 
 
 
