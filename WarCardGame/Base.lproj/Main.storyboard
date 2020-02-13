@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WarCardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ld-KH-LH1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" id="smS-5T-w9V">
+                                <rect key="frame" x="0.0" y="-53" width="414" height="949"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <stackView autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" ambiguous="YES" misplaced="YES" spacing="41" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="43I-oF-SBZ" userLabel="Cards Stack View">
+                                <rect key="frame" x="67" y="393" width="281" height="170"/>
+                                <subviews>
+                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card3" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1t-0b-kxE" userLabel="leftCardImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
+                                    </imageView>
+                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card7" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9SC-Cm-tGs" userLabel="rightCardImage">
+                                        <rect key="frame" x="161" y="0.0" width="120" height="170"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aVt-oA-wr4" userLabel="Right Score Stack View">
+                                <rect key="frame" x="279" y="777" width="100" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CPU" textAlignment="right" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erx-Vn-7QP">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="right" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="clip" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8J-2y-HoO">
+                                        <rect key="frame" x="0.0" y="30" width="100" height="40"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="0">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" metaFont="system" size="36"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="46E-kS-MFj"/>
+                                    <constraint firstAttribute="width" constant="100" id="Mlc-6Y-lYd"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="tgl-uh-QBW" userLabel="Left Score Stack View">
+                                <rect key="frame" x="20" y="792" width="100" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1s-Zx-VOs" userLabel="leftScoreLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="18" height="45.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="0">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="36"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" text="Player" textAlignment="center" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="1ep-uf-1Z3">
+                                        <rect key="frame" x="0.0" y="45.5" width="50" height="24.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="A6E-FE-t2e"/>
+                                    <constraint firstAttribute="height" constant="70" id="bQd-aL-IeO"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="UiE-dK-22e">
+                                <rect key="frame" x="83" y="142" width="240" height="159"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="8bN-MF-tvK" userLabel="Deal Button">
+                                <rect key="frame" x="151" y="581" width="113" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5lD-O2-l43"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="V79-rn-SXN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="XIU-rM-Om6"/>
+                                    <constraint firstAttribute="width" constant="80" id="lhR-tr-z4o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" image="dealbutton">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfu-Fc-FlL"/>
+                                    <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUx-Vc-tk7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8bN-MF-tvK" firstAttribute="leading" secondItem="N5c-2X-yr2" secondAttribute="leading" constant="120" id="2bk-r1-RzK"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aVt-oA-wr4" secondAttribute="bottom" constant="15" id="BJ8-oU-kYj"/>
+                            <constraint firstItem="N5c-2X-yr2" firstAttribute="bottom" secondItem="8bN-MF-tvK" secondAttribute="bottom" constant="80" id="FsJ-g6-6Kk"/>
+                            <constraint firstItem="43I-oF-SBZ" firstAttribute="centerX" secondItem="6Ld-KH-LH1" secondAttribute="centerX" id="Jsk-Mp-oxo"/>
+                            <constraint firstItem="8bN-MF-tvK" firstAttribute="centerX" secondItem="6Ld-KH-LH1" secondAttribute="centerX" id="Mq0-e0-Iud"/>
+                            <constraint firstItem="UiE-dK-22e" firstAttribute="top" secondItem="N5c-2X-yr2" secondAttribute="top" constant="50" id="Um2-v9-hiG"/>
+                            <constraint firstAttribute="bottom" secondItem="tgl-uh-QBW" secondAttribute="bottom" constant="15" id="WQU-ff-b3V"/>
+                            <constraint firstItem="43I-oF-SBZ" firstAttribute="centerX" secondItem="6Ld-KH-LH1" secondAttribute="centerX" id="kgC-m3-aPW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aVt-oA-wr4" secondAttribute="trailing" constant="15" id="lSO-Xz-lc3"/>
+                            <constraint firstItem="N5c-2X-yr2" firstAttribute="trailing" secondItem="8bN-MF-tvK" secondAttribute="trailing" constant="120" id="rhs-0D-v5D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N5c-2X-yr2"/>
+                    </view>
+                    <connections>
+                        <outlet property="rightImage" destination="s1t-0b-kxE" id="zrU-C0-qPa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="card3" width="120" height="170"/>
+        <image name="card7" width="120" height="170"/>
+        <image name="dealbutton" width="82" height="31"/>
+        <image name="logo" width="122" height="67"/>
+    </resources>
+</document>
