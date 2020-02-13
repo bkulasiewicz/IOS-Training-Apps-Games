@@ -9,3 +9,13 @@ Calculator
 - group buttons in one IBOutlet
 
 
+Timer  
+- double view APP
+- high level animation (fly objects) .curveEasyOut good!
+- work with time (time - something changing)
+- work with Date()
+
+
+
+
+
