@@ -22,7 +22,9 @@ WarCardGame //my first game//  - game against CPU, which side have higher card, 
 
 MapApp 
 - framework MapKit
-- 
+- localisation
+- annotation
+- keep data lastVisitedPlace 
 
 
 
