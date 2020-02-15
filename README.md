@@ -25,6 +25,8 @@ MapApp
 - location
 - annotation
 - keep data lastVisitedPlace 
+- user defaults
+- permission
 
 
 
