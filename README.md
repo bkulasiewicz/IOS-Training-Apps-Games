@@ -17,8 +17,9 @@ Timer
 
 
 WarCardGame //my first game//  - game against CPU, which side have higher card, he win and get point!!! 
-- Collection View - Cell 
+- select random card
 - colaborate with names of pictures
+
 
 MapApp 
 - framework MapKit
