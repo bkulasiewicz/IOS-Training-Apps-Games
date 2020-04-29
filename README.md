@@ -1,6 +1,6 @@
 # IOS-Training-Apps-Games
 What I had learned new in particular App
-
+changes
 
 Calculator 
 - work with enum
